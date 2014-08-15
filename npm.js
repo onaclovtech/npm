@@ -9,7 +9,7 @@
           return {
               search: function(query, page_limit) {
                   var method = 'GET';
-                  var url = "https://registry.npmjs.org/";
+                  var url = "https://registry.npmjs.org/-/_view/byKeyword?startkey=[" + query + "]&endkey=[" + query + ",{}]&group_level=4";
                   return $http({
                       method: method,
                       url: url +
